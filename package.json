@@ -1,0 +1,30 @@
+{
+  "name": "recompile",
+  "version": "1.0.0",
+  "description": "automatically recompile coffee-script (or other!) source on startup",
+  "keywords": [ "coffee-script" ],
+  "author": "Robey Pointer <robeypointer@gmail.com>",
+  "homepage": "https://github.com/robey/recompile",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robey/recompile.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    }
+  ],
+  "dependencies": {
+    "coffee-script": "^1.7"
+  },
+  "devDependencies": {
+  },
+  "main": "./lib/recompile",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "postinstall": "./node_modules/.bin/coffee -o lib -c src"
+  }
+}
