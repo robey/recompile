@@ -1,6 +1,6 @@
 {
   "name": "recompile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "automatically recompile coffee-script (or other!) source on startup",
   "keywords": [ "coffee-script" ],
   "author": "Robey Pointer <robeypointer@gmail.com>",
@@ -25,6 +25,6 @@
     "lib"
   ],
   "scripts": {
-    "postinstall": "./node_modules/.bin/coffee -o lib -c src"
+    "prepublish": "./node_modules/.bin/coffee -o lib -c src"
   }
 }
